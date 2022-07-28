@@ -16,6 +16,8 @@ body{
 header{
     font-family: "Shrikhand", cursive;
     text-align: center;
+    box-shadow: 0 0 0 8px lightgrey;
+    padding: 5px;
 }
 
 
