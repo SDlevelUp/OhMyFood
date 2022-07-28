@@ -57,14 +57,14 @@ main .city i{
     border: none;
     display: block;
     margin: 46px auto auto auto;
-    font-size: 1.1rem;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+    font-size: 17rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
 
 .btn:hover {
-    background: linear-gradient(to right bottom, #ff93e1, #a16be0);
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.45);
+    transform: scale(1.02);
+    opacity: 0.8;
 }
 
 
