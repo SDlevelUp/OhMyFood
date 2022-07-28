@@ -1,0 +1,36 @@
+
+*,
+::before 
+::after{
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+
+body{
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    font-family: "Shrikhland", cursive;
+    text-align: center;
+    box-shadow: 0 0 8px lightgray;
+    padding: 5px;
+    margin: 0%;
+    position: absolute;
+}
+
+main .city{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 8px;
+}
+
+main .city i{
+    font-size: 24px;
+}
+
