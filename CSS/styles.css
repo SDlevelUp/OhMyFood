@@ -4,8 +4,62 @@ body{
 }
 
 .headeromf{
-    color: antiquewhite;
+    font-family: 'Shrikhland', cursive;
+    text-align: center;
+    box-shadow: 0 0 8px lightgray;
+    padding: 5px;
+    margin: 0%;
 }
+
+main .city{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 8px;
+}
+
+main .city i{
+    font-size: 24px;
+}
+
+/* EXPLORER */
+
+.explorer{
+    text-align: center;
+}
+
+.explorer h2{
+    margin-top: 32px;
+    font-size: 32px;
+}
+
+.explorer p{
+    font-size: 16px;
+}
+
+
+.btn{
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    color: white;
+    padding: 17px 43px;
+    border-radius: 60px;
+    border: none;
+    display: block;
+    margin: 46px auto auto auto;
+    font-size: 22px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+    opacity: 0.8;
+}
+
+
+
 
 
 
