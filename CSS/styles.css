@@ -1,16 +1,9 @@
-body{
-    margin: 0px;
-    font-family: "Roboto", sans-serif;
-    background-color: aqua;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
-.headeromf{
-    font-family: 'Shrikhland', cursive;
-    text-align: center;
-    box-shadow: 0 0 8px lightgray;
-    padding: 5px;
-    margin: 0%;
-}
+
+
+
 
 main .city{
     display: flex;
