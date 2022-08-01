@@ -14,21 +14,23 @@ body{
     font-family: 'Shrikhand', cursive;
     text-align: center;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-    padding: 8px;
+    padding: 5px;
+    position: relative;
 }
 
-
-main .city{
+.city{
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: #f3f3f3;
+    align-items: center;
+    background-color: lightgray;
     text-align: center;
-    padding: 9px;
+    padding: 8px;
+    gap: 1rem;
 }
 
-main .city i{
-    font-size: 24px;
+.city i 
+{
+    font-size: 16px;
 }
 
 /* EXPLORER */
@@ -46,7 +48,6 @@ main .city i{
     font-size: 16px;
 }
 
-
 .btn{
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     color: white;
@@ -54,18 +55,21 @@ main .city i{
     border-radius: 60px;
     border: none;
     display: block;
-    margin: 46px auto auto auto;
-    font-size: 22px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 46px auto auto;
+    margin-top: 46px;
+    font-size: 1.1rem;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
 
 .btn:hover {
     transform: scale(1.02);
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
-
+div{
+    background-color: #9356DC;
+}
 
 
 
