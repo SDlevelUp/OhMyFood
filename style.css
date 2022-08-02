@@ -1,18 +1,162 @@
-/* Error: Undefined mixin.
- *    ,
- * 19 |         @include shadow;
- *    |         ^^^^^^^^^^^^^^^
- *    '
- *   layout\_functioning.scss 19:9  @import
- *   style.scss 5:9                 root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 19 \2502          @include shadow;\d\a    \2502          ^^^^^^^^^^^^^^^\a    \2575 \a   layout\\_functioning.scss 19:9  @import\a   style.scss 5:9                 root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  padding: 0 112px;
+}
+
+.headeromf {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  padding: 5px;
+  position: relative;
+}
+
+.city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  text-align: center;
+  padding: 8px;
+  gap: 16px;
+}
+.city i {
+  font-size: 16px;
+}
+
+.explorer {
+  text-align: center;
+}
+.explorer h2 {
+  margin-top: 32px;
+  font-size: 32px;
+}
+.explorer p {
+  font-size: 16px;
+}
+.explorer .btn {
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  padding: 17px 43px;
+  border-radius: 60px;
+  border: none;
+  display: block;
+  margin: 46px auto auto auto;
+  margin-top: 46px;
+  font-size: 17px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+.explorer .btn:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.explorer {
+  text-align: center;
+}
+.explorer h2 {
+  margin-top: 32px;
+  font-size: 32px;
+}
+.explorer p {
+  font-size: 16px;
+}
+.explorer .btn {
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  padding: 17px 43px;
+  border-radius: 60px;
+  border: none;
+  display: block;
+  margin: 46px auto auto auto;
+  margin-top: 46px;
+  font-size: 17px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+.explorer .btn:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.categories {
+  counter-reset: numeros;
+  margin-bottom: 32px;
+}
+.categories ol {
+  display: flex;
+  gap: 32px;
+}
+@media (max-width: 1000px) {
+  .categories ol {
+    flex-direction: column;
+  }
+}
+.categories li {
+  position: relative;
+  list-style-type: none;
+  background-color: #f6f6f6;
+  padding: 24px 32px;
+  flex-grow: 1;
+  border-radius: 16px;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+.categories li::before {
+  content: counter(numeros);
+  counter-increment: numeros;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.categories li:hover {
+  transform: scale(1.02);
+}
+.categories li i {
+  color: #7e7e7e;
+  margin-right: 16px;
+  font-size: 24px;
+}
+
+.menus {
+  background-color: #f6f6f6;
+}
+.menus h2 {
+  margin-bottom: 32px;
+}
+.menus .menus_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+@media (max-width: 1000px) {
+  .menus .menus_cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.menus .card {
+  border: 2px solid red;
+  height: 240px;
+}
+
+/*# sourceMappingURL=style.css.map */

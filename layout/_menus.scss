@@ -1,0 +1,23 @@
+@import "../utils/variables";
+
+
+.menus {
+    background-color: #f6f6f6;
+    h2 {
+        margin-bottom: 32px;
+    }
+
+    .menus_cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+        @media (max-width: $breakpoint) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .card {
+        border: 2px solid red;
+        height: 240px;
+    }
+}
+
