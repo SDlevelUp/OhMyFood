@@ -1,71 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-* {
-  box-sizing: border-box;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 19 |         @include shadow;
+ *    |         ^^^^^^^^^^^^^^^
+ *    '
+ *   layout\_functioning.scss 19:9  @import
+ *   style.scss 5:9                 root stylesheet */
 
-body {
-  margin: 0px;
-  font-family: "Roboto", sans-serif;
-}
-
-.headeromf {
-  font-family: "Shrikhand", cursive;
-  text-align: center;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-  padding: 5px;
-  position: relative;
-}
-
-.city {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: lightgray;
-  text-align: center;
-  padding: 8px;
-  gap: 1rem;
-}
-
-.city i {
-  font-size: 16px;
-}
-
-/* EXPLORER */
-.explorer {
-  text-align: center;
-}
-
-.explorer h2 {
-  margin-top: 32px;
-  font-size: 32px;
-}
-
-.explorer p {
-  font-size: 16px;
-}
-
-.btn {
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  color: white;
-  padding: 17px 43px;
-  border-radius: 60px;
-  border: none;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  margin: 46px auto auto;
-  margin-top: 46px;
-  font-size: 1.1rem;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 19 \2502          @include shadow;\d\a    \2502          ^^^^^^^^^^^^^^^\a    \2575 \a   layout\\_functioning.scss 19:9  @import\a   style.scss 5:9                 root stylesheet";
 }
-
-.btn:hover {
-  transform: scale(1.02);
-  opacity: 0.9;
-}
-
-div {
-  background-color: #9356DC;
-}
-
-/*# sourceMappingURL=style.css.map */
