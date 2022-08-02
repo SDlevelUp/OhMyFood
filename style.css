@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -11,6 +13,11 @@ body {
 
 main {
   padding: 0 112px;
+}
+
+h2 {
+  padding: 32px 0;
+  margin: 0%;
 }
 
 .headeromf {
@@ -38,7 +45,6 @@ main {
   text-align: center;
 }
 .explorer h2 {
-  margin-top: 32px;
   font-size: 32px;
 }
 .explorer p {
@@ -67,7 +73,6 @@ main {
   text-align: center;
 }
 .explorer h2 {
-  margin-top: 32px;
   font-size: 32px;
 }
 .explorer p {
@@ -109,7 +114,7 @@ main {
   position: relative;
   list-style-type: none;
   background-color: #f6f6f6;
-  padding: 24px 32px;
+  padding: 16px 32px;
   flex-grow: 1;
   border-radius: 16px;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
@@ -135,28 +140,29 @@ main {
 .categories li i {
   color: #7e7e7e;
   margin-right: 16px;
-  font-size: 24px;
+  font-size: 23px;
 }
 
 .menus {
   background-color: #f6f6f6;
 }
-.menus h2 {
-  margin-bottom: 32px;
-}
-.menus .menus_cards {
+.menus .menus__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 }
 @media (max-width: 1000px) {
-  .menus .menus_cards {
-    grid-template-columns: repeat(1, 1fr);
+  .menus .menus__cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-.menus .card {
-  border: 2px solid red;
+.menus .cards {
+  border: 1px solid purple;
+}
+.menus .cards .cards__images {
+  background-image: url("../assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   height: 240px;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
