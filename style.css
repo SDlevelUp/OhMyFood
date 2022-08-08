@@ -145,6 +145,7 @@ h2 {
 
 .menus {
   background-color: #f6f6f6;
+  margin-bottom: 32px;
 }
 .menus .menus__cards {
   display: grid;
@@ -153,16 +154,15 @@ h2 {
 }
 @media (max-width: 1000px) {
   .menus .menus__cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
-.menus .cards {
+.menus .card {
   border: 1px solid purple;
 }
-.menus .cards .cards__images {
-  background-image: url("../assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+.menus .card .cards__images {
+  background-image: url("../assets/menu-1.jpg");
   height: 240px;
-  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
