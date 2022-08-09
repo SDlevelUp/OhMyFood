@@ -1,0 +1,56 @@
+@import "../utils/variables";
+@import "../utils/colors";
+@import "../utils/mixins";
+
+
+.categories {
+    counter-reset: numeros;
+    margin-bottom: 32px;
+    margin-right: 32px;
+    & ol {
+        display: flex;
+        gap: 32px;
+        @media (max-width: 1000px){
+            flex-direction: column;
+        }
+    }
+    & li {
+        position: relative;
+        &::before {
+            content: counter(numeros);
+            counter-increment: numeros;
+            background-color: $color-primary;
+            color: $white;
+            border-radius: 50%;
+            width: 2 * $height;
+            height: 2 * $height;
+            display: grid;
+            place-items: center;
+            position: absolute;
+            left: -1* $height;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        list-style-type: none;
+        background-color: #f6f6f6;
+        padding: 16px 32px;
+        flex-grow: 1;
+        border-radius: 16px;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.02);
+            @include btn-lighten;
+            
+              & > i {
+                transform: scale(1.02);
+                  color:darken($color: $color-primary, $amount: 15);
+              }
+          }
+        & i {
+            color: $lightgrey;
+            margin-right: 16px;
+            font-size: 23px;
+        }
+    }
+}
+
