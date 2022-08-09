@@ -331,6 +331,7 @@ section {
 .menu__title {
   font-family: "Shrikhand", "cursive";
   font-size: 24px;
+  font-weight: normal;
 }
 .menu .heart {
   position: relative;
@@ -486,7 +487,6 @@ section {
 
 .reserved {
   height: 30vh;
-  display: grid;
   place-items: center;
 }
 .reserved button {

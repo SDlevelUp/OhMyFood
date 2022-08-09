@@ -59,6 +59,7 @@
     &__title{
         font-family: "Shrikhand","cursive";
         font-size: 24px;
+        font-weight: normal;
     }
     .heart {
       position: relative;
@@ -215,7 +216,6 @@
 
 .reserved {
   height: 30vh;
-  display: grid;
   place-items: center;
   button {
     @include button;
