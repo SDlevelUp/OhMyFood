@@ -1,0 +1,225 @@
+@import "../utils/colors";
+@import "../layout/header";
+@import "../utils/placement";
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "../utils/animation";
+
+.header {
+    background-color: $white;
+    margin: 0;
+    position: relative;
+    &__logo {
+        @extend %placer;
+        margin: 0;
+        padding:$paddingsection;
+        & img {
+        width: 200px;
+      }
+    }
+    
+    &__arrowleft {
+      position: relative;
+    }
+    &__arrow {
+      position: absolute;
+      left: 32px;
+      top: 23px;
+      @extend %placer;
+      font-size: 24px;
+      color: black;
+    }
+}
+
+.banner__img img{
+    display: block;
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.menu {
+    position: relative;
+    margin-top: -80px;
+    padding: 0 16px;
+    z-index: 1;
+    
+    background-color: $background-color;
+    border-radius: 32px 32px 0 0;
+
+    &__header {
+        display: flex;
+        padding: 32px 16px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title{
+        font-family: "Shrikhand","cursive";
+        font-size: 24px;
+    }
+    .heart {
+      position: relative;
+      
+      & i {
+      font-size: 24px;
+      }
+      
+      & .fas {
+        position:absolute;
+        opacity: 0;
+        @include gradient (180deg);
+        cursor:pointer;
+        background-clip:text;
+        -webkit-background-clip:text;
+        color:transparent;
+    
+      }
+      
+      &:hover .fas {
+        transition: all 180ms ease-in;
+        display: inline;
+        opacity: 1;
+      }
+      
+      &:hover .far {
+        transition: all 180ms ease-in;
+        opacity: 0;
+      }
+    }
+}
+
+.categorymenus {
+  @media (min-width:$breakpoint_use) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__title {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 16px 0;
+    padding-bottom: 8px;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 64px;
+      height:5px;
+      background-color: $color-tertiary;
+    }
+  }
+}
+
+.categorymenu {
+  width: 100%;
+  @media (min-width:$breakpoint_use) {
+  width:33%;
+  }
+    
+}
+
+
+
+
+.menuitem  {
+  display: flex;
+  background-color: $white;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  box-shadow: $btn_shadow $shadow-color;
+  max-width: 100%;
+  cursor: pointer;
+  @include shadow;
+  
+  &__list{
+    flex-basis: 0%;
+    min-width: 0;
+    flex-grow: 1;
+    padding: 16px;
+  }
+
+
+  &__price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px;
+    font-weight: bold;
+  }     
+
+  &__diseppear {
+    @extend %placer ;
+    width: 64px;
+    transition: .5s;
+    margin-right:-64px;
+    background-color: $color-tertiary;
+  }
+
+  &:hover &__diseppear {
+    margin-right: 0px;
+  }
+
+
+  &__enclanche {
+    @extend %placer;
+    background-color: $white;
+    width: 24px;
+    height: 24px;
+    transition-duration: 0.6s;
+    transform: rotate(270deg);
+
+    border-radius: 100px;
+  }
+
+  &:hover &__enclanche {
+    transform: rotate(0);
+  }
+
+  & .fa-check {
+    color: $color-tertiary;
+  }
+}
+
+.categorymenu {
+  @for $i from 1 to 10 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * .1}s;
+    }
+  }
+  animation: appear 1.8s;
+  animation-fill-mode: both;
+}
+
+
+.menuitem__list > h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.reserved {
+  height: 30vh;
+  display: grid;
+  place-items: center;
+  button {
+    @include button;
+  }
+}
+
+

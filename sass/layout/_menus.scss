@@ -1,0 +1,96 @@
+@import "../utils/mixins";
+@import "../utils/colors";
+@import "../utils/animation";
+
+.restaurant {
+    background-color: $background-color;
+    padding: $paddingsection;
+    margin: 24px 0 64px 0;
+    
+    &__allcards {
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+    }
+    
+    &__card {
+      @media (min-width:992px) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 48%;
+      }
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    background-color: white;
+    &:hover {
+      transform: scale(1.02);
+    }
+    
+    border-radius: 16px;
+    overflow: hidden;
+    @include shadow;
+      & img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+      }
+    }
+    
+    &__description {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      line-height: 20px;
+    }
+    
+    &__text {
+      display:flex;
+      flex-direction: column;
+      & > h2 {
+        font-size:24px;
+        font-weight: 500;
+        margin: 0;
+      }
+    }
+  
+    .new {
+        position: relative;
+        &::before {
+        @include btn-nouveau;
+        }
+    }
+  
+  .heart {
+    position: relative;
+    
+    & i {
+    font-size: 25px;
+    }
+
+    & .fas {
+        position:absolute;
+        opacity: 0;
+        @include gradient (180deg);
+        cursor:pointer;
+        background-clip:text;
+        -webkit-background-clip:text;
+        color:transparent;
+      }
+      
+      &:hover .fas {
+        transition: all 180ms ease-in;
+        display: inline;
+        opacity: 1;
+      }
+      
+      &:hover .far {
+        transition: all 180ms ease-in;
+        opacity: 0;
+        display: inline;
+      }
+    }
+}

@@ -2,17 +2,22 @@
 <html lang="fr">
 <head>
    <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Oh My Food</title>
    <script src="https://kit.fontawesome.com/5d4cc7f759.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" type="text/css" href="style.css">
-   <title>Oh My Food</title>
+   
 </head>
 
   <body>
-            <header class="headeromf">
-               <h1>ohmyfood</h1>
-            </header>
+
+
+
+
+          <header class="headeromf">
+              <h1>ohmyfood</h1>
+          </header>
       
       <main>
          <div class="city">
@@ -29,45 +34,104 @@
       <section class="categories">
          <h2>Fonctionnement</h2>
          <ol>
-            <li><i class="fas fa-mobile-alt" aria-hidden="true"></i>Choisissez un restaurant</li>
-            <li><i class="fa fa-list-ul" aria-hidden="true"></i>Composez votre menu</li>
-            <li><i class="fa-solid fa-store" aria-hidder="true"></i>Dégustez au restaurant</li>
+            <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
+            <li><i class="fa fa-list-ul"></i>Composez votre menu</li>
+            <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
          </ol>
       </section>
 
-      <section class="menus">
+      <section class="restaurant">
          <h2>Restaurants</h2>
-            <div class="menus__cards">
-               <a href="#" class="card">
-                  <div class="cards__images"></div>
-                  <div class="cards__descriptions"></div>
-               </a>
-            
-               <a href="#" class="card">
-                  <div class="cards__images"></div>
-                  <div class="cards__descriptions"></div>
-               </a>
 
-               <a href="#" class="card">
-                  <div class="cards__images"></div>
-                  <div class="cards__descriptions"></div>
-               </a>
 
-               <a href="#" class="card">
-                  <div class="cards__images"></div>
-                  <div class="cards__descriptions"></div>
-               </a>
-            </div>
-      </section>
+         <div class="restaurant__allcards">
 
+           <a href="./pages/resto-1.html" class="restaurant__card new">
+             <img src="./assets/menu-1.jpg" alt="La palette du goût">
+             <div class="restaurant__description">
+               <div class="restaurant__text">
+                 <h2>La palette du goût</h2>
+                 <p>Ménilmontant</p>
+               </div>
+               <div class="heart">
+                 <i class="fa-heart fas"></i>
+                 <i class="fa-heart far"></i>
+               </div>
+             </div>
+           </a>
+
+
+           <a href="#" class="restaurant__card new">
+             <img src="./assets/menu-2.jpg" alt="La note enchantée">
+             <div class="restaurant__description">
+               <div class="restaurant__text">
+                 <h2>La note enchantée</h2>
+                 <p>Charonne</p>
+               </div>
+               <div class="heart">
+                 <i class="fa-heart fas"></i>
+                 <i class="fa-heart far"></i>
+               </div>
+             </div>
+           </a>
+
+
+           <a href="#" class="restaurant__card">
+             <img src="./assets/menu-3.jpg" alt="Cité Rouge">
+             <div class="restaurant__description">
+               <div class="restaurant__text">
+                 <h2>A la française</h2>
+                 <p>Cité Rouge</p>
+               </div>
+               <div class="heart">
+                 <i class="fa-heart fas"></i>
+                 <i class="fa-heart far"></i>
+               </div>
+             </div>
+           </a>
+
+
+           <a href="#" class="restaurant__card">
+             <img src="./assets/menu-4.jpg" alt="Le délice des sens">
+             <div class="restaurant__description">
+               <div class="restaurant__text">
+                 <h2>Le délice des sens</h2>
+                 <p>Folie-Méricourt</p>
+               </div>
+               <div class="heart">
+                 <i class="fa-heart fas"></i>
+                 <i class="fa-heart far"></i>
+               </div>
+             </div>
+           </a>
+         </div>
+       </section>
       </main>
+        <footer>
+          <h2>ohmyfood</h2>
+          <p>
+            <i class="fas fa-utensils"></i>
+          <a href="#">
+            Proposer un restaurant
+          </a>
+          </p>
 
+          <p>
+            <i class="fas fa-hands-helping"></i>
+          <a href="#">
+            Devenir partenaire
+          </a>
+          </p>
 
-
-
-
-
+          <p>
+          <a href="#">
+            Mentions légales
+          </a>
+          </p>
+          
+          <p>
+            <a href="mailto:sarahberri@outlook.fr">Contact</a>
+          </p>
+        </footer>
   </body> 
-
-
 </html>

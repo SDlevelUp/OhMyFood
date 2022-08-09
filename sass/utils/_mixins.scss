@@ -1,0 +1,47 @@
+@mixin button {
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+        color: white;
+        padding: 17px 43px;
+        border-radius: 60px;
+        border: none;
+        display: block;
+        margin: 46px auto auto auto;
+        margin-top: 46px;
+        font-size: 17px;
+        cursor: pointer;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+        &:hover {
+            transform: scale(1.02);
+            opacity: 0.9;
+    }
+}
+
+@mixin btn-nouveau {
+    content: 'Nouveau';
+    position: absolute;
+    padding: 4px;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 13px;
+    color: darken($color-tertiary, $amount: 50);
+    background-color: $color-tertiary;
+    top: 16px;
+    right: 16px;
+    border-radius: 4px;
+}
+
+@mixin gradient($degree) {
+    background: $color-primary;
+    background:linear-gradient(($degree), $color-primary 25%, $color-secondary 100%);
+}
+
+@mixin btn-lighten($color:$color-primary) {
+    background-color: lighten($color: $color-primary, $amount: 25);
+}
+
+@mixin shadow{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+@mixin zoom {
+    transform: scale(1.02);
+}

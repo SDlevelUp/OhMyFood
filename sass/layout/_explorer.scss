@@ -1,7 +1,11 @@
-@use "../utils/box-shadow";
+@import "../utils/mixins";
+@import "../utils/colors";
+@import "../utils/animation";
+
 
 .explorer {
     text-align: center;
+    background-color: #f6f6f6;
     & h2{
         font-size: 32px;
 }
@@ -18,9 +22,8 @@
         margin: 46px auto auto auto;
         margin-top: 46px;
         font-size: 17px;
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
         cursor: pointer;
-        @include box-shadow.shadow;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
     }
  
     & .btn:hover {
@@ -28,3 +31,6 @@
         opacity: 0.9;
     }
 }
+
+
+  

@@ -1,17 +1,8 @@
-@import "./sass/base";
-@import "./layout/header";
-@import "./layout/city";
-@import "./layout/explorer";
-@import "./layout/explorer";
-@import "./layout/categories";
-@import "./layout/menus";
-
-
-
-
-
-
-
-
-
-
+@import "./sass/layout/header";
+@import "./sass/layout/categories";
+@import "./sass/layout/menus";
+@import "./sass/layout/explorer";
+@import "./sass/layout/city";
+@import "./sass/layout/footer";
+@import "./sass/base/foundations";
+@import "./sass/pages/restaurants";
