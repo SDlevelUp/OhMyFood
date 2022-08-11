@@ -39,7 +39,6 @@
     object-position: center;
 }
 
-
 .menu {
     position: relative;
     margin-top: -80px;
@@ -123,11 +122,7 @@
   @media (min-width:$breakpoint_use) {
   width:33%;
   }
-    
 }
-
-
-
 
 .menuitem  {
   display: flex;
@@ -219,6 +214,40 @@
   place-items: center;
   button {
     @include button;
+  }
+}
+
+.page_loader {
+  background-color: rgb(237, 248, 248);
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  height: 100vh;
+  opacity: 0.9;
+  display: grid;
+  place-items: center;
+
+  animation-fill-mode: forwards;
+  animation: disappear 5s forwards;
+}
+
+.loader {
+  width: $size*10;
+  height: $size*7;
+  display: flex;
+  justify-content: space-evenly;
+ 
+  &__bar {
+    background-color:$color-secondary;
+    height: 100%;
+    width: $size;
+    animation: bars $animation-dur backwards infinite ease-in-out alternate;
+    animation-delay: 5s;
+    @for $i from 1 through 5 {
+      &--#{$i} {
+        animation-delay: $anim-delay * $i
+      }
+    }
   }
 }
 

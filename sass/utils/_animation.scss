@@ -8,3 +8,20 @@
       opacity: 1;
     }
   }
+
+@keyframes bars {
+    0% {
+      transform: scaleY(0.5);
+    }
+    100% {
+      transform: rotateY(1.0);
+    }
+}
+
+@keyframes disappear {
+    100% {
+      opacity:(0);
+      visibility: hidden;
+    }
+}
+

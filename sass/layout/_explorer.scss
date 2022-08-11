@@ -33,4 +33,15 @@
 }
 
 
-  
+.city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    text-align: center;
+    padding: 8px;
+    gap: 16px;
+    & i {
+        font-size: 16px;
+    }
+}

@@ -559,7 +559,7 @@ section {
   display: grid;
   place-items: center;
   animation-fill-mode: forwards;
-  animation: disappear 10s forwards;
+  animation: disappear 5s forwards;
 }
 
 .loader {
@@ -567,13 +567,13 @@ section {
   height: 10.5vh;
   display: flex;
   justify-content: space-evenly;
-  animation-delay: 5s;
 }
 .loader__bar {
   background-color: #FF79DA;
   height: 100%;
   width: 1.5vh;
   animation: bars 1000ms backwards infinite ease-in-out alternate;
+  animation-delay: 5s;
 }
 .loader__bar--1 {
   animation-delay: 200ms;
