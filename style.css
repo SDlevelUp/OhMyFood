@@ -24,6 +24,8 @@
 }
 .categories li {
   position: relative;
+  display: flex;
+  align-items: center;
   list-style-type: none;
   background-color: #f6f6f6;
   padding: 16px 32px;
@@ -484,7 +486,7 @@ section {
 }
 
 .categorymenu {
-  animation: appear 1.8s;
+  animation: appear 2.5s;
   animation-fill-mode: both;
 }
 .categorymenu:nth-child(1) {

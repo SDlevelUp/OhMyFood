@@ -16,6 +16,8 @@
     }
     & li {
         position: relative;
+        display: flex;
+        align-items: center;
         &::before {
             content: counter(numeros);
             counter-increment: numeros;
