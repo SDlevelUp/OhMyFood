@@ -4,7 +4,8 @@
   "description": "Projet3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch style.scss style.css"
+    "sass": "sass --watch style.scss style.css",
+    "build": "postcss style.css -u autoprefixer -o ./build/style.min.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/SarahBerri/OhMyFood.github.io/issues"
   },
-  "homepage": "https://github.com/SarahBerri/OhMyFood.github.io#readme"
+  "homepage": "https://github.com/SarahBerri/OhMyFood.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0"
+  }
 }
