@@ -1,7 +1,7 @@
 {
-  "name": "projet3",
+  "name": "Berri_Sarah_3_code_082022",
   "version": "1.0.0",
-  "description": "Projet3",
+  "description": "Berri_Sarah_3_code_082022",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch style.scss style.css",
