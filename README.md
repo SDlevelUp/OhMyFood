@@ -20,12 +20,9 @@ Vous trouverez ci-joint un brief regroupant toutes les informations nécessaires
 
 * Tcehnologies utilisées: SASS, CSS, HTML
 
-* Les packages : 
-`* Run npmpackages :
+* Les packages : npm packages 
 
-* Le terminal : 
-`* npm install
-`* npm run Sass, npm install sass
+* Le terminal : npm install, npm run Sass, npm install sass
 
 ---- 
 
