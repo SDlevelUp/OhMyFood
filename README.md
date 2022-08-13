@@ -18,7 +18,7 @@ Vous trouverez ci-joint un brief regroupant toutes les informations nécessaires
 
 * Assurer la cohérence graphique d'un site web
 
-* Tcehnologies utilisées: SASS, CSS, HTML
+* Technologies utilisées: SASS, CSS, HTML
 
 * Les packages : npm packages 
 

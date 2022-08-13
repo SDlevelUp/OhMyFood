@@ -1,9 +1,9 @@
-@import "../utils/colors";
-@import "../layout/header";
-@import "../utils/placement";
-@import "../utils/mixins";
-@import "../utils/variables";
-@import "../utils/animation";
+@import "./../utils/colors";
+@import "./../layout/header";
+@import "./../utils/placement";
+@import "./../utils/mixins";
+@import "./../utils/variables";
+@import "./../utils/animation";
 
 .header {
     background-color: $white;
