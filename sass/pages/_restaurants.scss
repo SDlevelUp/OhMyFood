@@ -228,7 +228,7 @@
   place-items: center;
 
   animation-fill-mode: forwards;
-  animation: disappear 6s forwards;
+  animation: disappear 2s forwards;
 }
 
 .loader {
@@ -242,7 +242,7 @@
     height: 100%;
     width: $size;
     animation: bars $animation-dur backwards infinite ease-in-out alternate;
-    animation-delay: 6s;
+    animation-delay: 2s;
     @for $i from 1 through 5 {
       &--#{$i} {
         animation-delay: $anim-delay * $i
