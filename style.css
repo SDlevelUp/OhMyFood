@@ -403,20 +403,20 @@ section {
 }
 
 @media (min-width: 992px) {
-  .categorymenus {
+  .categorymenu {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 33%;
   }
 }
-.categorymenus__title {
+.categorymenu__title {
   position: relative;
   text-transform: uppercase;
   font-weight: 300;
   margin: 16px 0;
   padding-bottom: 8px;
 }
-.categorymenus__title::after {
+.categorymenu__title::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -424,15 +424,6 @@ section {
   width: 64px;
   height: 5px;
   background-color: #99E2D0;
-}
-
-.categorymenu {
-  width: 100%;
-}
-@media (min-width: 992px) {
-  .categorymenu {
-    width: 33%;
-  }
 }
 
 .menuitem {

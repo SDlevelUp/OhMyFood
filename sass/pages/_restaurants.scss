@@ -89,11 +89,11 @@
     }
 }
 
-.categorymenus {
+.categorymenu {
   @media (min-width:$breakpoint_use) {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 33%;
   }
 
   &__title {
@@ -115,12 +115,7 @@
   }
 }
 
-.categorymenu {
-  width: 100%;
-  @media (min-width:$breakpoint_use) {
-  width:33%;
-  }
-}
+
 
 .menuitem  {
   display: flex;
