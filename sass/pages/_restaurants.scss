@@ -93,7 +93,7 @@
   @media (min-width:$breakpoint_use) {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 33%;
   }
 
   &__title {
@@ -116,6 +116,14 @@
 }
 
 
+.categorymenus {
+  @media (min-width:$breakpoint_use) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+  }
+}
 
 .menuitem  {
   display: flex;
