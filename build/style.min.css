@@ -467,7 +467,7 @@ section {
 .menuitem {
   display: flex;
   background-color: white;
-  width: 100%;
+  width: 96%;
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 16px;
