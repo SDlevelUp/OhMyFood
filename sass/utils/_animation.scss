@@ -1,27 +1,28 @@
 @keyframes appear {
-    0% {
-      transform: translateY(50%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
   }
 
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @keyframes bars {
-    0% {
-      transform: scaleY(0.5);
-    }
-    100% {
-      transform: scaleY(1.0);
-    }
+  0% {
+    transform: scaleY(0.5);
+  }
+
+  100% {
+    transform: scaleY(1.0);
+  }
 }
 
 @keyframes disappear {
-    100% {
-      opacity:(0);
-      visibility: hidden;
-    }
+  100% {
+    opacity: (0);
+    visibility: hidden;
+  }
 }
-

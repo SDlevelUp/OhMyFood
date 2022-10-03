@@ -6,31 +6,35 @@
 @import "./../utils/animation";
 
 .header {
-    background-color: $white;
+  background-color: $white;
+  margin: 0;
+  position: relative;
+
+  &__logo {
+    @extend %placer;
     margin: 0;
+    padding: $paddingsection;
+
+    & img {
+      width: 200px;
+    }
+  }
+
+  &__arrowleft {
     position: relative;
-    &__logo {
-        @extend %placer;
-        margin: 0;
-        padding:$paddingsection;
-        & img {
-        width: 200px;
-      }
-    }
-    
-    &__arrowleft {
-      position: relative;
-    }
-    &__arrow {
-      position: absolute;
-      left: 32px;
-      top: 23px;
-      @extend %placer;
-      font-size: 24px;
-      color: black;
-    }
+  }
+
+  &__arrow {
+    position: absolute;
+    left: 32px;
+    top: 23px;
+    @extend %placer;
+    font-size: 24px;
+    color: black;
+  }
 }
-.banner__img img{
+
+.banner__img img {
   max-width: 100%;
   max-height: 512px;
   width: 100%;
@@ -38,55 +42,56 @@
 }
 
 .menu {
+  position: relative;
+  margin-top: -80px;
+  padding: 0 16px;
+  z-index: 1;
+
+  background-color: $background-color;
+  border-radius: 32px 32px 0 0;
+
+  &__header {
+    display: flex;
+    padding: 32px 16px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: "Shrikhand", "cursive";
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  .heart {
     position: relative;
-    margin-top: -80px;
-    padding: 0 16px;
-    z-index: 1;
-    
-    background-color: $background-color;
-    border-radius: 32px 32px 0 0;
 
-    &__header {
-        display: flex;
-        padding: 32px 16px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &__title{
-        font-family: "Shrikhand","cursive";
-        font-size: 24px;
-        font-weight: normal;
-    }
-    .heart {
-      position: relative;
-      
-      & i {
+    & i {
       font-size: 24px;
-      }
-      
-      & .fas {
-        position:absolute;
-        opacity: 0;
-        @include gradient (180deg);
-        cursor:pointer;
-        background-clip:text;
-        -webkit-background-clip:text;
-        color:transparent;
-    
-      }
-      
-      &:hover .fas {
-        transition: all 180ms ease-in;
-        display: inline;
-        opacity: 1;
-      }
-      
-      &:hover .far {
-        transition: all 180ms ease-in;
-        opacity: 0;
-      }
     }
+
+    & .fas {
+      position: absolute;
+      opacity: 0;
+      @include gradient (180deg);
+      cursor: pointer;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+
+    }
+
+    &:hover .fas {
+      transition: all 180ms ease-in;
+      display: inline;
+      opacity: 1;
+    }
+
+    &:hover .far {
+      transition: all 180ms ease-in;
+      opacity: 0;
+    }
+  }
 }
 
 .categorymenu {
@@ -102,14 +107,14 @@
     font-weight: 300;
     margin: 16px 0;
     padding-bottom: 8px;
-  
+
     &::after {
       content: "";
       position: absolute;
       bottom: 0;
       left: 0;
       width: 64px;
-      height:5px;
+      height: 5px;
       background-color: $color-tertiary;
     }
   }
@@ -125,7 +130,7 @@
   }
 }
 
-.menuitem  {
+.menuitem {
   display: flex;
   width: 96px;
   background-color: $white;
@@ -136,8 +141,8 @@
   max-width: 100%;
   cursor: pointer;
   @include shadow;
-  
-  &__list{
+
+  &__list {
     flex-basis: 0%;
     min-width: 0;
     flex-grow: 1;
@@ -151,13 +156,13 @@
     align-items: center;
     padding: 16px;
     font-weight: bold;
-  }     
+  }
 
   &__diseppear {
-    @extend %placer ;
+    @extend %placer;
     width: 64px;
     transition: .5s;
-    margin-right:-64px;
+    margin-right: -64px;
     background-color: $color-tertiary;
   }
 
@@ -192,12 +197,13 @@
       animation-delay: #{$i * .1}s;
     }
   }
+
   animation: appear 2.5s;
   animation-fill-mode: both;
 }
 
 
-.menuitem__list > h2 {
+.menuitem__list>h2 {
   margin: 0;
   font-size: 20px;
   font-weight: 500;
@@ -213,6 +219,7 @@
 .reserved {
   height: 30vh;
   place-items: center;
+
   button {
     @include button;
   }
@@ -237,13 +244,14 @@
   height: $size*7;
   display: flex;
   justify-content: space-evenly;
- 
+
   &__bar {
-    background-color:$color-secondary;
+    background-color: $color-secondary;
     height: 100%;
     width: $size;
     animation: bars $animation-dur backwards infinite ease-in-out alternate;
     animation-delay: 2s;
+
     @for $i from 1 through 5 {
       &--#{$i} {
         animation-delay: $anim-delay * $i
@@ -251,5 +259,3 @@
     }
   }
 }
-
-
